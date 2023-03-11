@@ -1,13 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { Provider } from "react-redux";
+import { store } from './redux/store.js'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <head>
+        <meta charSet="UTF-8"></meta>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap"
+          rel="stylesheet"
+        ></link>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"
+          rel="stylesheet"
+        ></link>
+
+        <title>Pokedex</title>
+      </head>
+      <App />
+    </Provider>
   </React.StrictMode>
 );
 

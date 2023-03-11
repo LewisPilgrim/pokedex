@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import PokeDisplay from './components/pokemon/PokeDisplay';
+import SearchBar from './components/search/SearchBar';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>POKEDEX</h1>
+        <SearchBar />
       </header>
+      <main>
+        <PokeDisplay />
+      </main>
+      <footer>
+        <a href="https://lewispilgrim.github.io">2023 @ Lewis Pilgrim</a>
+      </footer>
     </div>
   );
 }

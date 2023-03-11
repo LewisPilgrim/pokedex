@@ -8,15 +8,15 @@ const SearchBar = () => {
   const [query, setQuery] = useState("bulbasaur");
   const [searchQuery, setSearchQuery] = useState("");
 
-  const fetchPoke = async (q) => {
-    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${q}`);
-    const json = await response.json();
-    dispatch(setPokemon(json))
-  }
-
   useEffect(() => {
+    const fetchPoke = async (q) => {
+      const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${q}`);
+      const json = await response.json();
+      dispatch(setPokemon(json))
+    }
     fetchPoke(query);
-  }, [query, fetchPoke]);
+    // eslint-disable-next-line
+  }, [query]);
 
   const handleSubmit = (e) => {
     e.preventDefault();

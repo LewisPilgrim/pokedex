@@ -10,7 +10,7 @@ body {
 
 .App {
   font-family: 'Michroma';
-  background-image: url("./Images/pokedex-background.jpg");
+  background-image: url("./Images/pokedex-background.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

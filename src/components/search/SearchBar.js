@@ -16,7 +16,7 @@ const SearchBar = () => {
 
   useEffect(() => {
     fetchPoke(query);
-  }, [query]);
+  }, [query, fetchPoke]);
 
   const handleSubmit = (e) => {
     e.preventDefault();

@@ -11,6 +11,8 @@ function App() {
       </header>
       <main>
         <PokeDisplay />
+        <div className="pokeball">
+          </div>
       </main>
       <footer>
         <a href="https://lewispilgrim.github.io">2023 @ Lewis Pilgrim</a>

@@ -1,5 +1,5 @@
 .searchBar {
-    background-color:  #428fc5;
+    background-color:  #000;
 }
 
 .searchBar input {
@@ -43,14 +43,15 @@
 }
 
 .btn {
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     border: 1px solid transparent;
-    background-color: rgb(62, 106, 201);
+    background-color: #777;
     color: #fff;
     font-weight: 800;
     border-radius: 20px;
-    margin: 5px;
+    margin-bottom: 5px;
     cursor: pointer;
+    height: 40px;
 }
 
 .btn:hover {

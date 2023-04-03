@@ -9,40 +9,28 @@
 .nameIdBlock {
     display: block;
     width: 50%;
-    position: absolute;
     top: 0;
     left: 10px;
 }
 
 .displayPort {
-    width: 100%;
-    padding: 50px 0;
+    width: 40vw;
+    max-height: 20vh;
+    max-height: 100%;
+    padding: 25px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 3px solid #ccc;
+    border-radius: 12px;
+    color: #fff;
+    z-index: 2;
 }
 
-.displayPort img {
-    display: block;
-    margin: 90px auto;
-    width: 500px;
-    height: 500px;
-}
-
-@media only screen and (max-width: 380px) {
-    .displayPort img {
-        width: 200px;
-        height: 200px;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1265px) {
     .displayPort {
         width: 350px;
         padding: 0;
         padding-bottom: 50px;
-    }
-    .displayPort img {
-        width: 300px;
-        height: 300px;
-        margin-top: 130px;
     }
     .pokeTypes {
         max-width: 300px;
@@ -52,9 +40,9 @@
 .pokeAbilities {
     font-weight: 700;
     font-size: 20px;
-    background-color: rgba(255, 255, 255, 0.6);
     padding: 4px;
     max-width: 250px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
     border-radius: 20px;
     margin: 20px;
 }
@@ -67,11 +55,18 @@
 
 .pokeTypes {
     margin: 20px;
-    background-color: rgba(255, 255, 255, 0.6);
+    width: 300px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
     padding: 14px;
     border-radius: 20px;
     font-size: 20px;
     font-weight: 700;
+}
+
+@media screen and (max-width: 720px) {
+    .pokeTypes {
+        font-size: 12px;
+    }
 }
 
 .pokeType {
@@ -80,6 +75,23 @@
     border: 3px solid;
     border-radius: 20px;
     text-align: center;
+}
+
+.pokeball {
+    position: absolute;
+    right: 0;
+    bottom: 65px;
+    background-image: url(../../Images/open-pokeball.png);
+    height: 380px;
+    width: 575px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+}
+
+.pokeball img {
+    background: transparent;
+    z-index: 0;
 }
 
 #fire {

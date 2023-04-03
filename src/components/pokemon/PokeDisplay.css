@@ -20,6 +20,10 @@
     padding: 25px;
     margin: 0;
     background-color: rgba(0, 0, 0, 0.4);
+    background-image: url(../../Images/kanto-badges-2.png);
+    background-repeat: no-repeat;
+    background-position: -350% -38%;
+    background-size: 110%;
     border: 3px solid #ccc;
     border-radius: 12px;
     color: #fff;
